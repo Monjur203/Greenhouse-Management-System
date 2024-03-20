@@ -1,0 +1,20 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/Greenhouse</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">7557</property>
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        
+        
+       
+        <mapping class="com.anudip.app.entities.Device"/>
+        <mapping class="com.anudip.app.entities.Log"/>
+        <mapping class="com.anudip.app.entities.User"/>
+        <mapping class="com.anudip.app.entities.SensorData"/>
+        <mapping class="com.anudip.app.entities.GreenhouseConfiguration"/>
+    </session-factory>
+</hibernate-configuration>
